@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="../../SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+<script src="jquery/jquery.min.js" type="application/javascript">
+</script>
+</head>
+
+
+<body>
+
+
+<script>
+$(document).ready(function(){
+	$(".ww").click(function(){
+		$("#11").hide();
+
+		
+	});
+	$(".a1").click(function(){
+		
+		$("#11").show();
+		});
+		
+		$(".a1").click(function(){
+			$("#11").css("background-color","green");
+			});	
+	
+	$(".bb").click(function(){
+			$("#qq").load("oo.php?q=c");
+			});	
+	
+	
+});
+
+
+
+ 
+
+</script>
+
+
+
+
+
+
+
+
+<div id="CollapsiblePanel1"style="float:right;" class="CollapsiblePanel" align="right">
+  <div class="CollapsiblePanelTab" tabindex="0" align="right">
+    <input class="ww" type="button" value="الباب الاول"/>
+  </div>
+  <div   class="CollapsiblePanelContent">
+    <div id="CollapsiblePanel2" style="float:right;"class="CollapsiblePanel" align="right">
+      <div class="CollapsiblePanelTab" tabindex="0"><input type="button" value="الفصل الثاني" /></div>
+      <div class="CollapsiblePanelContent" align="right">
+      <input type="button" value="البند الثالث"/>
+    <input type="button" class="bb" value="البند الثاني" />
+      <input type="button"  class="a1" value="البند الاول"  />
+
+      </div>
+    </div>
+    <div id="CollapsiblePanel3" style="float:right;" class="CollapsiblePanel" align="right">
+      <div class="CollapsiblePanelTab" tabindex="0" ><input type="button" value="الفصل الرابع"/></div>
+      <div class="CollapsiblePanelContent" align="right"><input type="button" value="البند الرابع"/>
+   <input type="button" value="البند الثالث"/>
+    <input type="button" value="البند الثاني"/>
+      <input type="button" value="البند الاول"/>
+</div>
+    </div>
+    <div id="CollapsiblePanel4" style="float:right;" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0"><input type="button" value="الفصل الخامس"/></div>
+        <div class="CollapsiblePanelContent">
+              <input type="button" value="البند الخامس"/>
+            <input type="button" value="البند الرابع"/>
+         <input    type="button" value="البند الثالث"/>
+     <input type="button" value="البند االثاني"/>
+     <input type="button" value="البند الاول"/>
+</div>
+</div>
+    <div id="CollapsiblePanel5"  style="float:right;" class="CollapsiblePanel">
+      <div class="CollapsiblePanelTab" tabindex="0"><input type="button" value="الفصل السادس"/></div>
+      <div class="CollapsiblePanelContent">
+             <input type="button" value="البند السابع"/>
+             <input type="button" value="البند السادس"/>
+             <input type="button" value="البند الخامس"/>
+            <input type="button" value="البند الرابع"/>
+         <input    type="button" value="البند الثالث"/>
+     <input type="button" value="البند االثاني"/>
+     <input type="button" value="البند الاول"/>
+     
+    </div>
+  </div>
+    <div id="CollapsiblePanel6"  style="float:right;" class="CollapsiblePanel">
+      <div class="CollapsiblePanelTab" tabindex="0"><input  type="button" value="الفصل السابع"></div>
+      <div class="CollapsiblePanelContent">       <input type="button" value="البند الاول"/>
+             <input type="button" value="البند الثاني"/></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", {contentIsOpen:false});
+var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", {contentIsOpen:false});
+var CollapsiblePanel3 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3", {contentIsOpen:false});
+var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4", {contentIsOpen:false});
+var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5", {contentIsOpen:false});
+var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6", {contentIsOpen:false});
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<table id="11" width="261" height="208"     style="float:right;" border="1"  cellpadding="0" cellspacing="0">
+
+<tr>
+
+
+
+<td width="145">
+  <input type="text"/>
+<td width="110" > رقم الاستمارة</td>
+</tr>
+<tr>
+<td><input type="text"/></td>
+<td>رقم التسوية</td>
+</tr>
+<tr>
+<td><input type="text"/></td>
+<td  width="110">التأريخ</td>
+</tr>
+<tr>
+<td><input type="text"/></td>
+<td  width="110">البيان</td>
+</tr>
+<tr>
+
+
+<td><input type="text"/></td>
+<td width="110">  النوع الاول</td>
+
+</tr>
+<tr>
+<td><input type="text"/></td>
+<td  width="110">النوع الثاني</td>
+</tr>
+<tr>
+<td><input type="text"/></td>
+<td id="qq">   </td>
+</tr>
+
+</table>
+
+
+</body>
+</html>

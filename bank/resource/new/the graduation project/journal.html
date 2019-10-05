@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+</script>
+<script src="jquery/jquery.min.js">
+</script>
+<!--***********************************-->
+<script>
+$(document).ready(function(){
+  $(".busage").click(function(){
+   $("#usage").load("usage_account.php?q=a");
+   $("#tusage").load("usage_account.php?q=aa");
+  });
+  $(".bbankusage").click(function(){
+   $("#usage").load("usage_account.php?q=b");
+   $("#tusage").load("usage_account.php?q=bb");  });
+   
+   $(".bbankresource").click(function(){
+ $("#usage").load("usage_account.php?q=c");
+   $("#tusage").load("usage_account.php?q=cc");  });
+
+  $(".bmonetary").click(function(){
+ $("#usage").load("usage_account.php?q=d");
+   $("#tusage").load("usage_account.php?q=dd");  });
+   
+$(".bbankcurrent_account").click(function(){
+ $("#usage").load("usage_account.php?q=e");
+   $("#tusage").load("usage_account.php?q=ee");  });
+
+
+$(".imperset_temporery").click(function(){
+ $("#usage").load("usage_account.php?q=f");
+   $("#tusage").load("usage_account.php?q=ff");  });
+
+$(".bimperstcurrent_account").click(function(){
+ $("#usage").load("usage_account.php?q=g");
+   $("#tusage").load("usage_account.php?q=gg");  });
+  
+   $(".bimperst_on_salary").click(function(){
+ $("#usage").load("usage_account.php?q=h");
+   $("#tusage").load("usage_account.php?q=hh");  });
+   
+    $(".bconfidence_accumbent").click(function(){
+ $("#usage").load("usage_account.php?q=i");
+   $("#tusage").load("usage_account.php?q=ii");  });
+   
+   $(".b_bypass_monetary").click(function(){
+ $("#usage").load("usage_account.php?q=j");
+   $("#tusage").load("usage_account.php?q=jj");  });
+   
+   $(".b_amount_paid_introducer").click(function(){
+ $("#usage").load("usage_account.php?q=k");
+   $("#tusage").load("usage_account.php?q=kk");  });
+   
+       $(".b_debit_money").click(function(){
+ $("#usage").load("usage_account.php?q=l");
+   $("#tusage").load("usage_account.php?q=ll");  });
+});
+</script>
+<table width="100%" border="2" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+     <img src="image/pub_garden.jpg" width="124" height="131" /></td>
+  </tr>
+  
+  <tr>
+  
+<table width="100%" align="center" border="1" cellspacing="0" cellpadding="0">
+<tr align="center">
+<td width="90%" align="center"  valign="top">
+    
+<table  align="center" width="30%" border="2" cellspacing="0" cellpadding="0">
+ <caption  style="background-color:#00DFFF"><font size="+3">
+      دفتـــــــر اليوميـــة العامــــة</font>
+      </caption>
+<tr>
+<td id="usage" align="center" width="15%" style="background-color:#00DFFF"></td>
+<td align="center" width="15%" style="background-color:#00DFFF"><font size="+1">البيــان</font></td>
+<td width="15%" align="center" style="background-color:#00DFFF"><font size="+1">التاريخ</font></td>
+<td valign="bottom" width="15%"  style="background-color:#00DFFF">
+      <table   width="100%" border="0" cellspacing="0" cellpadding="0">
+  <caption valign="top"  style="background-color:#00DFFF"><font size="+1">
+      رقــم اليوميه العامه</font>
+      </caption>
+  <tr valign="bottom">
+  
+      <td valign="bottom" align="center" style="background-color:#FF5F55"><font size="+1"> رقـم التسويه</font></td>
+      <td valign="bottom" align="center"  style="background-color:#FF5F55"><font size="+1">رقـم الاستماره</font></td>
+     
+  </tr>
+</table>
+
+</td>
+</tr>
+
+<tr align="center">
+<td id="tusage" align="center" width="10%"></td>
+<td align="right" width="10%"><input name="data" type="text" size="25" /></td>
+<td width="10%" align="right"><input type="text" size="15" /></td>
+<td width="10%">
+       <table width="100%" border="1" cellspacing="0" cellpadding="0">
+      <tr>
+       <td align="right"><input type="text" size="7" /></td>
+       <td align="right"> <input type="text" size="7" /></td>
+     </tr>
+       </table>
+</td>
+</tr>
+</table>
+</td>
+    
+    <td align="right" width="10%">
+   
+      <div id="CollapsiblePanel1" class="CollapsiblePanel">
+       <table width="100%" border="1" cellspacing="0" cellpadding="0">
+    <tr><td>
+  <div class="CollapsiblePanelTab" tabindex="0" align="center" style="background-color:#808080"><font size="+2">مـن حـسـاب</font> </div>
+       <div  class="CollapsiblePanelContent">
+       
+       <div id="CollapsiblePanel5" class="CollapsiblePanel">
+         <div class="CollapsiblePanelTab" tabindex="0"><input name="useful" class="busage" type="button" style="width:200px; font-size:20px;  height:40px; background-color:#DF6360" value="الحـسـابات  الرئيسية" /></div>
+         <div class="CollapsiblePanelContent"><input name="useful" class="busage" type="button" style="width:200px; font-size:20px;  height:40px; background-color:#7FBFFF" value="حـسـاب  الاسـتـخـدمـات" />
+       <input name="useful" class="bbankusage" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  البـنك أسـتـخـدمـات" />
+       <input name="useful" class="bbankresource" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  البـنك موارد" />
+   <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حساب الموارد" />
+ 
+</div>
+       </div>
+<div id="CollapsiblePanel2" class="CollapsiblePanel">
+  <div class="CollapsiblePanelTab" tabindex="0"> <input name="useful" type="button" style="width:195px; font-size:20px; height:40px; background-color:#DF6360" value="الحـسابات المساعده المدينه" /></div>
+           <div class="CollapsiblePanelContent"> <input  class="bmonetary"  name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  النـقدية" />
+            <input   class="bbankcurrent_account" name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  البـنك حـسـاب جاري" />
+             <input class="imperset_temporery"  name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  السـلف المؤقته" />
+               <input  class="bimperstcurrent_account" name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  سـلف حـسـابات جاريه" />
+  <input  class="bimperst_on_salary" name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  السـلف على الأجور" />
+  <input  class="bconfidence_accumbent" name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  الأعتمادات المستندية " />
+  <input  class="b_bypass_monetary"  name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب التحويلات النقديه" />
+  <input  class="b_amount_paid_introducer" name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب المبالغ المدفوعة مقدماّ" />
+  <input  class="b_debit_money" name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  المدينين ماليه" />
+
+              </div>
+       </div>
+         <div id="CollapsiblePanel4" class="CollapsiblePanel">
+           <div class="CollapsiblePanelTab" tabindex="0"> <input name="useful" type="button" style="width:195px; font-size:20px; height:40px; background-color:#DF6360" value="الحـسابات المساعده الدائنه" /></div>
+           <div class="CollapsiblePanelContent"> <input name="useful" type="button" style="width:200px;  font-size:20px;height:40px; background-color:#7FBFFF" value="حـسـاب  السـلف على الأجور" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب الحـسـابات الجارية " />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب المبالغ الدئنه تحت التسويه" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب الموارد العامة المشتركهّ" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  الدائنين ماليه" /></div>
+         </div>
+         <div  id="CollapsiblePanel8" class="CollapsiblePanel">
+           <div class="CollapsiblePanelTab" tabindex="0"> <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حسابات دفترية اخرى" />
+</div>
+           <div     class="CollapsiblePanelContent">
+             <div  id="CollapsiblePanel13" class="CollapsiblePanel">
+               <div class="CollapsiblePanelTab" tabindex="0">
+                <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حسابات  انتقالية مدينة" /></div>
+               <div class="CollapsiblePanelContent">
+          <input    name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب البنك أمانات" />  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" حساب التزامات سلع وخدمات وممتلكات " />
+          <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" حساب التزامات اكتساب أصول ثابتة" />
+          <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" حساب التزامات اكتساب أصول غير منتَجة" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب تسوية الموارد المحصلة مقدماً" />
+ <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" حساب الموارد المستحقة " />
+   <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" حساب النفقات المقدمة عن سلع وخدمات وممتلكات " />
+                  
+                  </div>
+                 </div>
+                 
+                 
+             <div id="CollapsiblePanel15" class="CollapsiblePanel">
+             
+               <div class="CollapsiblePanelTab" tabindex="0"> <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حسابات انتقالية دائنة" />
+</div>
+               <div class="CollapsiblePanelContent"> <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب مرتجع الأجور" />
+ <div class="CollapsiblePanelContent"><input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب التأمينات المتنوعة" />
+ <div class="CollapsiblePanelContent"><input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب المبالغ الدائنة المحصلة للغير" />
+<input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب دائنون التزامات قائمة " />
+<input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب الموارد المحصلة مقدماً " />  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" حساب تسوية المستحقات والمقدمات المدينة " />  </div>
+             </div>
+            
+   
+
+               <div id="CollapsiblePanel18" class="CollapsiblePanel">
+                 <div class="CollapsiblePanelTab" tabindex="0"><input type="button" value="حسابات نظامية"></div>
+                 <div class="CollapsiblePanelContent">
+                 <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب أمانات الكفالات " />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب الديون المستحقة للحكومة" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب متابعة مطلوبات الحكومة" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب الشيكات الواردة للتحصيل" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب الشيكات الواردة المؤجلة" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب الشيكات المؤجلة" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="حساب المبالغ المستحقة عن أوراق ونماذج ذات قيمة" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value=" 	حساب متابعة المبالغ المستحقة عن أوراق ونماذج ذات قيمة" />
+      </div>
+               </div></td></tr></table></div>
+      
+<div id="CollapsiblePanel3" class="CollapsiblePanel">
+ <table width="100%" border="1" cellspacing="0" cellpadding="0">
+
+<tr><td>
+       <div class="CollapsiblePanelTab" tabindex="0" align="center" style="background-color:#808080"><font size="+2">الــى حـسـاب</font></div>
+       
+       <div class="CollapsiblePanelContent">
+       <div id="CollapsiblePanel9" class="CollapsiblePanel">
+         <div class="CollapsiblePanelTab" tabindex="0"><input name="useful" class="busage" type="button" style="width:200px; font-size:20px;  height:40px; background-color:#DF6360" value="الحـسـابات  الرئيسية" /></div>
+         <div class="CollapsiblePanelContent">  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  الموارد" />
+       <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  البـنك أسـتـخـدمـات" />
+       <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  البـنك موارد" />
+       <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حساب الأستخدمات" />
+
+</div>
+       </div>
+<div id="CollapsiblePanel6" class="CollapsiblePanel">
+  <div class="CollapsiblePanelTab" tabindex="0"> <input name="useful" type="button" style="width:195px; font-size:20px; height:40px; background-color:#DF6360" value="الحـسابات المساعده المدينه" /></div>
+          <div class="CollapsiblePanelContent">          <input  name="useful" type="button" style="width:200px; height:40px; background-color:#7FBFFF" value="حـسـاب  النـقديه" />
+            <input name="useful" type="button" style="width:200px;  font-size:20px;height:40px; background-color:#7FBFFF" value="حـسـاب  البـنك حـسـاب جاري" />
+             <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  السـلف المؤقته" />
+               <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  سـلف حـسـابات جاريه" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  السـلف على الأجور" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  الأعتمادات المستنديه " />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب التحويلات النقديه" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب المبالغ المدفوعه مقدماّ" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  المدينين ماليه" />
+</div>
+      </div>
+        
+        <div id="CollapsiblePanel7" class="CollapsiblePanel">
+          <div class="CollapsiblePanelTab" tabindex="0"> <input name="useful" type="button" style="width:195px; font-size:20px; height:40px; background-color:#DF6360" value="الحـسابات المساعده الدائنه" /></div>
+          <div class="CollapsiblePanelContent"> <input name="useful" type="button" style="width:200px;font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  السـلف على الأجور" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب الحـسـابات الجارية " />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب المبالغ الدئنه تحت التسويه" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب الموارد العامة المشتركهّ" />
+  <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="حـسـاب  الدائنين ماليه" /></div>
+        </div>
+        
+         <div id="CollapsiblePanel10" class="CollapsiblePanel">
+           <div class="CollapsiblePanelTab" tabindex="0"><input name="useful" type="button" style="width:200px;  font-size:20px;height:40px; background-color:#DF6360" value="حسابات دفترية اخرى" /></div>
+           <div class="CollapsiblePanelContent"> <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#7FBFFF" value="الحسابات الانتقاليه" />
+ <input name="useful" type="button" style="width:200px; height:40px; font-size:20px; background-color:#7FBFFF" value="الحسابات النظامية" />
+ <input name="useful" type="button" style="width:200px; height:40px; font-size:20px; background-color:#7FBFFF" value="الحسابات الرقابيه الاحصائيه" />
+</div>
+         </div>
+       </div> </td></tr></table></div>      
+      <div id="CollapsiblePanel11" class="CollapsiblePanel">
+      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> <td align="center">
+       <div class="CollapsiblePanelTab" tabindex="0" align="center" style="background-color:#808080"><font size="+2">عـــــرض التقــــاريـــر</font></div>
+        <div class="CollapsiblePanelContent">
+          <div id="CollapsiblePanel12" class="CollapsiblePanel">
+            <div class="CollapsiblePanelTab" tabindex="0"><input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="كشف الحسبة اليومية" /></div>
+            <div class="CollapsiblePanelContent">
+            <input name="useful" class="busage" type="button" style="width:200px; font-size:20px;  height:40px; background-color:#7FBFFF" value="الحـسـابات  الرئيسية" />
+            <input name="useful" type="button" style="width:195px; font-size:20px; height:40px; background-color:#7FBFFF" value="الحـسابات المساعده المدينه" />
+            <input name="useful" type="button" style="width:195px; font-size:20px; height:40px; background-color:#7FBFFF" value="الحـسابات المساعده الدائنه" />
+            <input name="useful" type="button" style="width:200px;  font-size:20px;height:40px; background-color:#7FBFFF" value="حسابات دفترية اخرى" />
+            </div>
+          </div>
+       <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="كشف الحساب الشهري " />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="كشف الحسابات الختاميه" />
+      <input name="useful" type="button" style="width:200px; font-size:20px; height:40px; background-color:#DF6360" value="كشف مفردات حسابيه اخرى" />
+      </div>
+        </td></tr>
+</table>
+      </div></td>
+  </tr>
+</table>
+</tr>
+
+</table>
+<script type="text/javascript">
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
+var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2");
+var CollapsiblePanel3 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3");
+var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4");
+var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6");
+var CollapsiblePanel7 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel7");
+var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5");
+var CollapsiblePanel8 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel8");
+var CollapsiblePanel9 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel9");
+var CollapsiblePanel10 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel10");
+var CollapsiblePanel11 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel11");
+var CollapsiblePanel12 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel12");
+var CollapsiblePanel13 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel13");
+var CollapsiblePanel14 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel14");
+var CollapsiblePanel15 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel15");
+var CollapsiblePanel16 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel16");
+var CollapsiblePanel17 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel17");
+var CollapsiblePanel18 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel18");
+var CollapsiblePanel19 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel19");
+</script>
+</body>
+</html>

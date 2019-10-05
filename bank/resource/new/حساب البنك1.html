@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="the graduation project/jquery/jquery.min.js"> </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script >
+$(document).ready(function(){
+	    $(".a1").click(function(){
+		$("#a").load("count.php");
+		});
+		 $(".b1").click(function(){
+		$("#a").load("count2.php");
+		});
+		
+		
+		});
+		</script>
+        <script type="text/javascript">
+function visbl(){
+
+	
+	document.getElementById("dd").style.visibility="hidden";
+	document.getElementById("m").style.visibility="hidden";
+}
+function showHint()
+{
+
+ document.getElementById("dd").style.visibility="visible";
+  document.getElementById("m").style.visibility="visible";
+		
+  
+  
+}
+
+</script>
+
+ <table width="100%"  align="center" border="2">
+  <tr>
+    <td colspan="2"  align="center"><img src="بدون عنوان-1.jpg" width="1000" height="140"  align="middle"/></td>
+   
+  </tr>
+ 
+  <tr>
+  <tr>
+    <td  height="28" valign="top"  id="dd" align="center" bgcolor="#669999" colspan="2">
+    
+  <input type="button"  value="جانب الدائن" class="b1"/>
+    <input type="button"  value="جانب المدين" class="a1" />
+    </td>
+    </tr>
+    <td width="977" height="98" align="center" valign="top" bgcolor="#339966" >
+   <div id="a">   </div>
+   
+    <br />
+<div dir="rtl">
+ 
+    <p><h2 style="font-family:'Arial Black', Gadget, sans-serif Verdana, Geneva, sans-serif"> العمليات الاساسية</h2></p>
+    <input type="button" value="تخــزين" style="font:'Courier New', Courier, monospace"  />
+     <input type="button" value="استــرجاع"  />
+      <input type="button" value="تعــديل"  />
+       <input type="button" value="بحـــث"  />
+      
+</div>
+</td>
+
+ 
+  
+ 
+
+
+  
+    <td width="104" valign="top" align="right" bgcolor="#999933" >
+      <input type="button" value="اغـــــــــــــــــــلاق" name="close"  class="clo" onclick=" visbl()"  style="background-color:  #CC6;width:100px""  border="1"  /><br />
+      <input type="button" value="اضافـــــــــــــــــــة" name="add"  class="w"  onclick=" showHint()"  style="background-color:  #CC6; width:100px"/><br />
+      <input type="button" value="تقـــريـــــــــــــــر" name="select" id="ee"   style="background-color: #CC6; width:100px""/>
+    </td>
+    
+  </tr>
+</table>
+
+
+
+</body>
+</html>

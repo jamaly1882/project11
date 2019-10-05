@@ -1,0 +1,884 @@
+<table width="800" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td rowspan="2" dir="RTL" width="796"><table width="797" border="1" cellpadding="0" cellspacing="0">
+      
+      <tr>
+        <td rowspan="2" dir="RTL" width="123">بيان أنواع الحسابات</td>
+        <td colspan="2" dir="RTL">المتأخرات حتى نهاية الشهر السابق</td>
+        <td colspan="2" dir="RTL">عمليات الشهر الجاري</td>
+        <td colspan="2" dir="RTL">الجملة</td>
+        <td colspan="2" dir="RTL">الباقي حتى نهاية الشهر الجاري</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="20">منه</td>
+        <td dir="RTL" width="86">له</td>
+        <td dir="RTL" width="53">منه</td>
+        <td dir="RTL" width="50">له</td>
+        <td dir="RTL" width="43">منه</td>
+        <td dir="RTL" width="65">له</td>
+        <td dir="RTL" width="91">منه</td>
+        <td dir="RTL" width="246">له</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="123">الحسابات    الرئيسية</td>
+        <td dir="RTL" width="20">ريال</td>
+        <td dir="RTL" width="86">ريال</td>
+        <td dir="RTL" width="53">ريال</td>
+        <td dir="RTL" width="50">ريال</td>
+        <td dir="RTL" width="43">ريال</td>
+        <td dir="RTL" width="65">ريال</td>
+        <td dir="RTL" width="91">ريال</td>
+        <td dir="RTL" width="246">ريال</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="123">الموارد</td>
+        <td dir="RTL" width="86">'.$rowlatergm['resources_gm'].' </td>
+        <td dir="RTL" width="20">'.$rowlatergd['resources_gd'].' </td>
+        
+        <td dir="RTL" width="53">'.$rowgm['sum(`resources_gm`)'].' </td>
+        <td dir="RTL" width="50">'.$resourses_gd.'</td>
+        <td dir="RTL" width="43">'.$resources.'</td>
+        <td dir="RTL" width="65">'.$resourcesgd.'</td>
+        <td dir="RTL" width="91">'.$resourcessub2.'</td>
+        <td dir="RTL" width="246">'.$resourcessub1.'</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="123">الاستخدامات</td>
+         <td dir="RTL" width="86">'.$rowlatergm['uses_gm'].' </td>
+        <td dir="RTL" width="20">'.$rowlatergd['uses_gd'].' </td>
+       
+        <td dir="RTL" width="53">'.$uses_gm.'</td>
+        <td dir="RTL" width="50">'.$rowgd['sum(`uses_gd`)'].'</td>
+        <td dir="RTL" width="43">'.$used.'</td>
+        <td dir="RTL" width="65">'.$used_gds.'</td>
+        <td dir="RTL" width="91">'.$usedsub2.'</td>
+        <td dir="RTL" width="246">'.$usedsub1.'</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="123">حساب    البنك موارد</td>
+        <td dir="RTL" width="86">'.$rowlatergm['bank_resources_gm'].' </td>
+        <td dir="RTL" width="20">'.$rowlatergd['bank_uses_gd'].' </td>
+        
+        <td dir="RTL" width="53">'.$rowgm['sum(`bank_uses_gm`)'].'</td>
+        <td dir="RTL" width="50">'.$rowgd['sum(`bank_uses_gd`)'].'</td>
+        <td dir="RTL" width="43">'.$used_bank.'</td>
+        <td dir="RTL" width="65">'.$used_bank_gd.'</td>
+        <td dir="RTL" width="91">'.$used_bank_sub2.'</td>
+        <td dir="RTL" width="246">'.$used_bank_sub1.'</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="123">حساب    البنك استخدامات</td>
+          <td dir="RTL" width="86">'.$rowlatergm['bank_uses_gm'].' </td>
+        <td dir="RTL" width="20">'.$rowlatergd['bank_resources_gd'].'</td>
+      
+        <td dir="RTL" width="53">'.$rowgm['sum(`bank_resources_gm`)'].'</td>
+        <td dir="RTL" width="50">'.$rowgd['sum(`bank_resources_gd`)'].'</td>
+        <td dir="RTL" width="43">'.$resources_bank.'</td>
+        <td dir="RTL" width="65">'.$resources_bank_gd.'</td>
+        <td dir="RTL" width="91">resources_bank_sub2</td>
+        <td dir="RTL" width="246">'.$resources_bank_sub1.'</td>
+      </tr>
+      <tr>
+        <td dir="RTL" width="123">جملة    الحسابات الرئيسية</td> <td dir="RTL" width="86">'.$summain.'</td>
+        <td dir="RTL" width="20">'.$summaingd.'</td>
+       
+        <td dir="RTL" width="53">'.$sumgm.'</td>
+        <td dir="RTL" width="50">'.$sum.'</td>
+        <td dir="RTL" width="43">'.$sumjmlh.'</td>
+        <td dir="RTL" width="65">'.$sumjmlhgd.'</td>
+        <td dir="RTL" width="91">'.$sumsub2.'</td>
+        <td dir="RTL" width="246">'.$sumsub1.'</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+
+
+<p>&nbsp;</p>
+<table width="806" border="1" cellpadding="0" cellspacing="0">
+<tr>
+  <td rowspan="2" dir="rtl" width="802" ><table width="817" cellpadding="0" cellspacing="0" border="1">
+    
+    <tr>
+      <td rowspan="2" dir="rtl" width="147">بيان أنواع الحسابات</td>
+      <td colspan="2" dir="rtl">المتأخرات حتى نهاية الشهر السابق</td>
+      <td colspan="2" dir="rtl">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl">الجملة</td>
+      <td colspan="2" dir="rtl">الباقي حتى نهاية الشهر الجاري</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="45">منه</td>
+      <td dir="rtl" width="111">له</td>
+      <td dir="rtl" width="79">منه</td>
+      <td dir="rtl" width="61">له</td>
+      <td dir="rtl" width="64">منه</td>
+      <td dir="rtl" width="88">له</td>
+      <td dir="rtl" width="88">منه</td>
+      <td dir="rtl" width="83">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">الحسابات    المساعدة المدينة</td>
+      <td dir="rtl" width="45">ريال</td>
+      <td dir="rtl" width="111">ريال</td>
+      <td dir="rtl" width="79">ريال</td>
+      <td dir="rtl" width="61">ريال</td>
+      <td dir="rtl" width="64">ريال</td>
+      <td dir="rtl" width="88">ريال</td>
+      <td dir="rtl" width="88">ريال</td>
+      <td dir="rtl" width="83">ريال</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    البنك حسابات جارية</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    النقدية</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    السلف المؤقتة</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    سلف الحسابات الجارية</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    السلف على الأجور</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    الاعتمادات المستندية</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    التحويلات النقدية للخارج</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    المبالغ المدفوعة  مقدما</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">حساب    المدينين (مالية)</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="147">الجمــــلة</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="111">&nbsp;</td>
+      <td dir="rtl" width="79">&nbsp;</td>
+      <td dir="rtl" width="61">&nbsp;</td>
+      <td dir="rtl" width="64">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="88">&nbsp;</td>
+      <td dir="rtl" width="83">&nbsp;</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" border="1">
+<tr>
+  <td rowspan="2" dir="rtl" width="803"><table cellspacing="0" cellpadding="0" border="1">
+  
+    <tr>
+      <td rowspan="2" dir="rtl" width="183">بيان أنواع الحسابات</td>
+      <td colspan="2" dir="rtl">المتأخرات حتى نهاية الشهر السابق</td>
+      <td colspan="2" dir="rtl">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl">الجملة</td>
+      <td colspan="2" dir="rtl">الباقي حتى نهاية الشهر الجاري</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="87">منه</td>
+      <td dir="rtl" width="55">له</td>
+      <td dir="rtl" width="103">منه</td>
+      <td dir="rtl" width="55">له</td>
+      <td dir="rtl" width="100">منه</td>
+      <td dir="rtl" width="55">له</td>
+      <td dir="rtl" width="102">منه</td>
+      <td dir="rtl" width="58">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="183">لحسابــات    المسـاعــدة الدائنـــة</td>
+      <td dir="rtl" width="87">ريال</td>
+      <td dir="rtl" width="55">ريال</td>
+      <td dir="rtl" width="103">ريال</td>
+      <td dir="rtl" width="55">ريال</td>
+      <td dir="rtl" width="100">ريال</td>
+      <td dir="rtl" width="55">ريال</td>
+      <td dir="rtl" width="102">ريال</td>
+      <td dir="rtl" width="58">ريال</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="183">حساب    الحسابات الجارية</td>
+      <td dir="rtl" width="87">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="183">حساب    المبالغ الدائنة تحت التسوية</td>
+      <td dir="rtl" width="87">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="183">حساب    الموارد العامة المشتركة</td>
+      <td dir="rtl" width="87">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="183">حساب    الدائنين (مالية)</td>
+      <td dir="rtl" width="87">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="183">الجمــــلة</td>
+      <td dir="rtl" width="87">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" border="1">
+<tr>
+  <td rowspan="2" dir="rtl" width="817"><table cellspacing="0" cellpadding="0" border="1">
+    
+      <td rowspan="2" dir="rtl" width="221">بيان أنواع الحسابات</td>
+      <td colspan="2" dir="rtl">المتأخرات حتى نهاية الشهر السابق</td>
+      <td colspan="2" dir="rtl">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl">الجملة</td>
+      <td colspan="2" dir="rtl">الباقي حتى نهاية الشهر الجاري</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="45">منه</td>
+      <td dir="rtl" width="53">له</td>
+      <td dir="rtl" width="100">منه</td>
+      <td dir="rtl" width="53">له</td>
+      <td dir="rtl" width="97">منه</td>
+      <td dir="rtl" width="53">له</td>
+      <td dir="rtl" width="98">منه</td>
+      <td dir="rtl" width="58">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="221">حسابات    الأمانات والالتزامات القائمة المدينة</td>
+      <td dir="rtl" width="45">ريال</td>
+      <td dir="rtl" width="53">ريال</td>
+      <td dir="rtl" width="100">ريال</td>
+      <td dir="rtl" width="53">ريال</td>
+      <td dir="rtl" width="97">ريال</td>
+      <td dir="rtl" width="53">ريال</td>
+      <td dir="rtl" width="98">ريال</td>
+      <td dir="rtl" width="58">ريال</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="221">حساب    البنك أمانات</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+     
+    <tr>
+      <td dir="rtl" width="221">الجمــــلة</td>
+      <td dir="rtl" width="45">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" border="1">
+<tr>
+  <td rowspan="2" dir="rtl" width="808"><table cellspacing="0" cellpadding="0" border="1">
+    
+    <tr>
+      <td rowspan="2" dir="rtl" width="270">بيان أنواع الحسابات</td>
+      <td colspan="2" dir="rtl" width="182">المتأخرات حتى نهاية الشهر السابق</td>
+      <td colspan="2" dir="rtl" width="182">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl" width="182">الجملة</td>
+      <td colspan="2" dir="rtl" width="182">الباقي حتى نهاية الشهر الجاري</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="182">منه</td>
+      <td dir="rtl" width="91">له</td>
+      <td dir="rtl" width="182">منه</td>
+      <td dir="rtl" width="91">له</td>
+      <td dir="rtl" width="182">منه</td>
+      <td dir="rtl" width="91">له</td>
+      <td dir="rtl" width="182">منه</td>
+      <td dir="rtl" width="91">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">حسابات    الأمانات والالتزامات القائمة الدائنة</td>
+      <td dir="rtl" width="182">ريال</td>
+      <td dir="rtl" width="91">ريال</td>
+      <td dir="rtl" width="182">ريال</td>
+      <td dir="rtl" width="91">ريال</td>
+      <td dir="rtl" width="182">ريال</td>
+      <td dir="rtl" width="91">ريال</td>
+      <td dir="rtl" width="182">ريال</td>
+      <td dir="rtl" width="91">ريال</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">حساب    مرتجع الأجور</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">حساب    التأمينات المتنوعة</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">حساب    المبالغ الدائنة المحصلة للغير</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">حساب    دائنون سلع وخدمات وممتلكات</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">حساب    دائنون اكتساب أصول غير مالية</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="270">الجملة</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+      <td dir="rtl" width="182">&nbsp;</td>
+      <td dir="rtl" width="91">&nbsp;</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" border="1">
+<tr>
+  <td rowspan="2" dir="rtl" width="802"><table cellspacing="0" cellpadding="0" border="1">
+    
+    <tr>
+      <td rowspan="2" dir="rtl" width="246">بيان أنواع الحسابات</td>
+      <td colspan="2" dir="rtl">المتأخرات حتى نهاية الشهر السابق</td>
+      <td colspan="2" dir="rtl">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl">الجملة</td>
+      <td colspan="2" dir="rtl">الباقي حتى نهاية الشهر الجاري</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="33">منه</td>
+      <td dir="rtl" width="40">له</td>
+      <td dir="rtl" width="100">منه</td>
+      <td dir="rtl" width="53">له</td>
+      <td dir="rtl" width="97">منه</td>
+      <td dir="rtl" width="53">له</td>
+      <td dir="rtl" width="98">منه</td>
+      <td dir="rtl" width="58">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">الحسـابـــات    النظـاميـــة</td>
+      <td dir="rtl" width="33">ريال</td>
+      <td dir="rtl" width="40">ريال</td>
+      <td dir="rtl" width="100">ريال</td>
+      <td dir="rtl" width="53">ريال</td>
+      <td dir="rtl" width="97">ريال</td>
+      <td dir="rtl" width="53">ريال</td>
+      <td dir="rtl" width="98">ريال</td>
+      <td dir="rtl" width="58">ريال</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    الكفالات</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    أمانات الكفالات</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    الديون المستحقة للحكومة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    تسوية مطلوبات الحكومة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    الشيكات الواردة للتحصيل</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    الشيكات تحت التحصيل</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    الشيكات الواردة المؤجلة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    الشيكات المؤجلة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    المبالغ المستحقة عن أوراق ونماذج ذات قيمة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">حساب    تسوية المبالغ المستحقة عن أوراق ونماذج ذات قيمة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="246">الجمـــلة</td>
+      <td dir="rtl" width="33">&nbsp;</td>
+      <td dir="rtl" width="40">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="97">&nbsp;</td>
+      <td dir="rtl" width="53">&nbsp;</td>
+      <td dir="rtl" width="98">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" border="1">
+<tr>
+  <td rowspan="2" dir="rtl" width="802"><table cellspacing="0" cellpadding="0" border="1">
+   
+    <tr>
+      <td rowspan="2" dir="rtl" width="220">بيان أنواع الحسابات</td>
+      <td colspan="2" dir="rtl">المتأخرات حتى نهاية الشهر السابق</td>
+      <td colspan="2" dir="rtl">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl">الجملة</td>
+      <td colspan="2" dir="rtl">الباقي حتى نهاية الشهر الجاري</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="50">منه</td>
+      <td dir="rtl" width="55">له</td>
+      <td dir="rtl" width="103">منه</td>
+      <td dir="rtl" width="55">له</td>
+      <td dir="rtl" width="100">منه</td>
+      <td dir="rtl" width="55">له</td>
+      <td dir="rtl" width="102">منه</td>
+      <td dir="rtl" width="58">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">لحسـابــات    الرقابيــة الإحصائيــة</td>
+      <td dir="rtl" width="50">ريال</td>
+      <td dir="rtl" width="55">ريال</td>
+      <td dir="rtl" width="103">ريال</td>
+      <td dir="rtl" width="55">ريال</td>
+      <td dir="rtl" width="100">ريال</td>
+      <td dir="rtl" width="55">ريال</td>
+      <td dir="rtl" width="102">ريال</td>
+      <td dir="rtl" width="58">ريال</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة متحصلات المنح</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    المنح</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة متحصلات الاقتراض</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    الاقتراض الحكومي</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة متحصلات أصول القروض</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    متحصلات أصول القروض</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة مبيعات الأصول المالية</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مبيعات الأصول المالية</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    اكتساب الأصول غير المالية</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة اكتساب الأصول غير المالية</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    الإقراض الحكومي</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة إستخدام الإقراض الحكومي</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    إكتساب الأصول المالية</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة إكتساب الأصول المالية</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    سداد القروض</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">حساب    مراقبة سداد القروض</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="220">الجمــــلة</td>
+      <td dir="rtl" width="50">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="103">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="100">&nbsp;</td>
+      <td dir="rtl" width="55">&nbsp;</td>
+      <td dir="rtl" width="102">&nbsp;</td>
+      <td dir="rtl" width="58">&nbsp;</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>

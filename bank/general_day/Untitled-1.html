@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+		function sarf_insert(){
+			
+	var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("h").innerHTML=xmlhttp.responseText;
+    }
+  }
+ 
+
+	alert("sarf");
+	 xmlhttp.open("GET","index.php",true);
+xmlhttp.send();
+
+ 
+
+	}
+
+</script>
+</head>
+
+<body>
+<img src="../clip_image002_0001.gif" alt="" width="196" height="74" />
+
+<table width="200" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td id="h">
+    
+    <frameset cols="150">
+    <frame name="navbar" src="index.html">
+    <frame name="main" src="page1.html">
+</frameset></td>   
+ <td><input name="day"  onclick="sarf_insert()" type="button" value="اليومية العامة" /></td>
+  </tr>
+</table>
+</body>
+</html>

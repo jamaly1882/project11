@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script src="jquery/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".ts").click(function(){
+$("#type_s").hide();
+$("#type_aq").hide();
+ $("#type_ts").show();});
+ 
+$(".s").click(function(){
+$("#type_ts").hide();
+$("#type_aq").hide();
+ $("#type_s").show();});
+ 
+ $(".aq").click(function(){
+$("#type_ts").hide();
+ $("#type_s").hide();
+  $("#type_aq").show();
+ 
+  });});
+</script>
+<script>
+function visble(f){	
+document.getElementById(f).style.visibility="visible";
+}
+function getcontent_ts(num){
+	var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {if(num=='1'){
+    document.getElementById("content").innerHTML=xmlhttp.responseText;
+    }
+	else{  document.getElementById("content").innerHTML="www";
+   }}
+  }
+  
+xmlhttp.open("GET","taswiat.php",true);
+xmlhttp.send();
+
+	}
+	function getcontent_s(num){
+	var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {if(num=='1'){
+    document.getElementById("content").innerHTML=xmlhttp.responseText;
+    }
+	else{  document.getElementById("content").innerHTML=xmlhttp.responseText;
+   }}
+  }
+  
+xmlhttp.open("GET","sarfe.php",true);
+xmlhttp.send();
+
+	}
+		function getcontent_aq(num){
+	var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("content").innerHTML=xmlhttp.responseText;
+    
+  document.getElementById("content").innerHTML=xmlhttp.responseText;
+   }
+  }
+  if(num==1){
+xmlhttp.open("GET","aqfal_day.php",true);
+xmlhttp.send();}
+ else{
+xmlhttp.open("GET","aqfal_end.php",true);
+xmlhttp.send();}
+ 
+
+	}
+</script>
+</head>
+
+<body>
+<table width="100%" border="2" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+     <img src="image/pub_garden.jpg" width="500" align="middle" height="200" /></td>
+  </tr>
+  
+  <tr>
+
+<table width="100%" align="center" border="1" cellspacing="0" cellpadding="0" >
+<tr align="center" >
+
+<td width="83%" height="200">
+  <div id="TabbedPanels1" class="TabbedPanels">
+    <ul class="TabbedPanelsTabGroup">
+       <li class="TabbedPanelsTab" tabindex="0"><font size="+1">أدخــــال</font></li>
+      <li class="TabbedPanelsTab" tabindex="0"><font size="+1">تقـــارير</font></li>
+   </ul>
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent">
+      <table  align="center" width="90%" height="200" border="1">
+  <tr>
+  <div style="background-color:#3CF">
+  <input name="" class="s" style="font-size:18px;"   onclick="visble('type_s')" type="button" value="صـــــرف" />
+     <input name="" class="t" style="font-size:18px;" type="button" value="تــــــــوريــــد" />
+     <input name="" class="aq" style="font-size:18px;" onclick="visble('type_aq')" type="button" value="أقـــفــــــــال" />
+     <input name="" class="ts" style="font-size:18px;" onclick="visble('type_ts')" type="button" value="تـــــسويـــات" /></div>
+     <hr color="#000000" />
+     <td width="20%">
+
+<select name=""  onchange="getcontent_ts(this.value);" id="type_ts" style="font-size:18px; visibility:hidden;"   class="TabbedPanelsTabHover"  >
+      <option >نــوع الــتسديد</option>
+    <option value="1" >التــسديــد نقدا</option>
+     <option value="2">التــسديد بوثائق</option>
+      <option value="3">التــسديد بشيــكات</option>
+    </select>
+    <select name=""  onchange="getcontent_s(this.value);" id="type_s" style="font-size:18px; visibility:hidden;"   class="TabbedPanelsTabHover"  >
+      <option >نــوع الصرف</option>
+    <option value="1"  >صــرف نهائــي</option>
+     <option value="2">صـــرف ســلفـه</option>
+    </select>
+<select name=""  onchange="getcontent_aq(this.value);" id="type_aq" style="font-size:18px; visibility:hidden;"   class="TabbedPanelsTabHover"  >
+      <option >نــوع الاقـفــال</option>
+    <option value="1"  >يومي\شهـري</option>
+     <option value="2">نهاية السنه الماليه</option>
+     <option value="3">في السنه الجديده\لسنه سابقه</option>
+
+    </select>
+
+    </td>
+    <td valign="bottom" align="right"> 
+     <div  id="content"></div>
+   
+   
+     </td>
+     <td align="center" width="10%" height="200" valign="middle">
+   
+     <p>
+       <label>
+         <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" />
+         تحصــــــيل</label>
+        <hr color="#000000" />
+       <br />
+       <label>
+         <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1" />
+         تــــــــوريــد</label>
+       <br />
+     </p>
+
+
+     </td>
+  </tr>
+</table>
+</div>
+      <div class="TabbedPanelsContent">Content 2</div>
+    </div>
+  </div></td></tr></table></tr></table>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+
+</html>

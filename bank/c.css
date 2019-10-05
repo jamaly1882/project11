@@ -1,0 +1,12 @@
+ #container{
+        border:2px solid grey;
+        padding:2px;
+#interesting fact{
+            font-style:italic;
+.animal-info{
+	border:2px solid grey;
+     padding:2px;
+}
+#facts{
+	 list-style-type:none;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" border="1">
+    <tr>
+      
+      <td colspan="2" dir="rtl">الباقي حتى نهاية الشهر الجاري</td>
+      <td colspan="2" dir="rtl">الجملة</td>
+      <td colspan="2" dir="rtl">عمليات الشهر الجاري</td>
+      <td colspan="2" dir="rtl"> المتأخرات حتى نهاية الشهر السابق</td>
+      <td rowspan="2" dir="rtl" width="157">بيان أنواع الحسابات</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="89">منه</td>
+      <td dir="rtl" width="72">له</td>
+      <td dir="rtl" width="82">منه</td>
+      <td dir="rtl" width="63">له</td>
+      <td dir="rtl" width="66">منه</td>
+      <td dir="rtl" width="91">له</td>
+      <td dir="rtl" width="91">منه</td>
+      <td dir="rtl" width="86">له</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="89">ريال</td>
+      <td dir="rtl" width="72">ريال</td>
+      <td dir="rtl" width="82">ريال</td>
+      <td dir="rtl" width="63">ريال</td>
+      <td dir="rtl" width="66">ريال</td>
+      <td dir="rtl" width="91">ريال</td>
+      <td dir="rtl" width="91">ريال</td>
+      <td dir="rtl" width="86">ريال</td>
+       <td dir="rtl" width="157">الحسابات    المساعدة المدينة</td>
+     
+    </tr>
+    <tr>
+       <td dir="rtl" width="89">'.$bank_c_ac1.'</td>
+      <td dir="rtl" width="72">'.$bank_c_ac2.'</td>
+      <td dir="rtl" width="82">'.$bank_c_ac_gd.'</td>
+      <td dir="rtl" width="63">'.$bank_c_ac_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`bank_c_ac_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`bank_c_ac_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['bank_c_ac_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['bank_c_ac_gm'].'</td>
+      <td dir="rtl" width="157">حساب    البنك حسابات جارية</td>
+     
+    </tr>
+    <tr>
+       <td dir="rtl" width="89">'.$monetary1.'</td>
+      <td dir="rtl" width="72">'.$monetary2.'</td>
+      <td dir="rtl" width="82">'.$monetary_gd.'</td>
+      <td dir="rtl" width="63">'.$monetary_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`monetary_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`monetary_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['monetary_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['monetary_gm'].'</td>
+      <td dir="rtl" width="157">حساب    النقدية</td>
+      
+    </tr>
+    <tr>
+      <td dir="rtl" width="89">'.$advance_temp1.'</td>
+      <td dir="rtl" width="72">'.$advance_temp2.'</td>
+      <td dir="rtl" width="82">'.$advance_temp_gd.'</td>
+      <td dir="rtl" width="63">'.$advance_temp_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`advance_temp_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`advance_temp_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['advance_temp_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['advance_temp_gm'].'</td>
+
+        <td dir="rtl" width="157">حساب    السلف المؤقتة</td>
+    
+    </tr>
+    <tr>
+     
+     <td dir="rtl" width="89">'.$advance_c_ac1.'</td>
+      <td dir="rtl" width="72">'.$advance_c_ac2.'</td>
+      <td dir="rtl" width="82">'.$advance_c_ac_gd.'</td>
+      <td dir="rtl" width="63">'.$advance_c_ac_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`advance_c_ac_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`advance_c_ac_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['advance_c_ac_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['advance_c_ac_gm'].'</td>
+       <td dir="rtl" width="157">حساب    سلف الحسابات الجارية</td>
+    </tr>
+    <tr>
+           <td dir="rtl" width="89">'.$advance_on_sal1.'</td>
+      <td dir="rtl" width="72">'.$advance_on_sal2.'</td>
+      <td dir="rtl" width="82">'.$advance_on_sal_gd.'</td>
+      <td dir="rtl" width="63">'.$advance_on_sal_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`advance_on_sal_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`advance_on_sal_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['advance_on_sal_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['advance_on_sal_gm'].'</td>
+        <td dir="rtl" width="157">حساب    السلف على الأجور</td>
+    
+    </tr>
+    <tr>
+     
+           <td dir="rtl" width="89">'.$depand_document1.'</td>
+      <td dir="rtl" width="72">'.$depand_document2.'</td>
+      <td dir="rtl" width="82">'.$depand_document_gm.'</td>
+      <td dir="rtl" width="63">'.$depand_document_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`depand_document_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`depand_document_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['depand_document_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['depand_document_gm'].'</td>       <td dir="rtl" width="157">حساب    الاعتمادات المستندية</td>
+    </tr>
+    <tr>
+     
+           <td dir="rtl" width="89">'.$change_mounteray1.'</td>
+      <td dir="rtl" width="72">'.$change_mounteray2.'</td>
+      <td dir="rtl" width="82">'.$change_mounteray_gd.'</td>
+      <td dir="rtl" width="63">'.$change_mounteray_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`change_mounteray_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`change_mounteray_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['change_mounteray_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['change_mounteray_gm'].'</td>
+       <td dir="rtl" width="157">حساب    التحويلات النقدية للخارج</td>
+    </tr>
+    <tr>
+      
+        <td dir="rtl" width="89">'.$amonet_paide_beforehand1.'</td>
+      <td dir="rtl" width="72">'.$amonet_paide_beforehand2.'</td>
+      <td dir="rtl" width="82">'.$amonet_paide_beforehand_gd.'</td>
+      <td dir="rtl" width="63">'.$amonet_paide_beforehand_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`amonet_paide_beforehand_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`amonet_paide_beforehand_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['amonet_paide_beforehand_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['amonet_paide_beforehand_gm'].'</td>
+      <td dir="rtl" width="157">حساب    المبالغ المدفوعة  مقدما</td>
+    </tr>
+    <tr>
+      <td dir="rtl" width="89">'.$madinin_malih1.'</td>
+      <td dir="rtl" width="72">'.$madinin_malih2.'</td>
+      <td dir="rtl" width="82">'.$madinin_malih_gd.'</td>
+      <td dir="rtl" width="63">'.$madinin_malih_gm.'</td>
+      <td dir="rtl" width="66">'.$rowgd['sum(`madinin_malih_gd`)'].'</td>
+      <td dir="rtl" width="91">'.$rowgm['sum(`madinin_malih_gm`)'].'</td>
+      <td dir="rtl" width="91">'.$rowlatergd['madinin_malih_gd'].'</td>
+      <td dir="rtl" width="86">'.$rowlatergm['madinin_malih_gm'].'</td>     <td dir="rtl" width="157">حساب    المدينين (مالية)</td>
+    
+    </tr>
+    <tr>
+      <td dir="rtl" width="89">'.$sumsub1.'</td>
+      <td dir="rtl" width="72">'.$sumsub2.'</td>
+      <td dir="rtl" width="82">'.$sumjmlhgd.'</td>
+      <td dir="rtl" width="63">'.$sumjmlh.'</td>
+      <td dir="rtl" width="66">'.$sum.'</td>
+      <td dir="rtl" width="91">'.$sumgm.'</td>
+      <td dir="rtl" width="91">'.$summaingd.'</td>
+      <td dir="rtl" width="86">'.$summain.'</td>
+       <td dir="rtl" width="157">الجمــــلة</td>
+     
+    </tr>
+  </table>
+</body>
+</html>

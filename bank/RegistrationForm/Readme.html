@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+Simple Registration/Login code in PHP<br />
+
+
+Read more:PHP registration form PHP login form<br />
+
+
+Installation<br />
+
+
+Edit the file membersite_config.php in the includes folder and update the configuration information (like your email address, Database login etc) Note The script will create the table in the database when you submit the registration form the first time.<br />
+
+
+Upload the entire 'source' folder to your web site.<br />
+
+
+You can customize the forms and scripts as required.<br />
+
+
+Files<br />
+
+
+register.php<br />
+
+
+This script displays the registration form. When the user submits the form, the script sends a confirmation email to the user. The registration is complete only when the user clicks the confirmation link that they received in the email<br />
+
+
+confirmreg.php<br />
+
+
+Confirms a user's email address. The user clicks the confirmation link that they receive at their email address and is send to this script. This script verifies the user and marks the user as confirmed. The user can login only after he has confirmed himself.<br />
+
+
+login.php<br />
+
+
+The user can login through this login page. After successful login, the user is sent to the page login-home.php<br />
+
+
+access-controlled.php<br />
+
+
+This is a sample accesscontrolled page. If the user is logged in, he can view this page. Else the user is sent to login.php
+<br />
+
+includes/membersite_config.php Update your confirguration information in this file<br />
+
+
+includes/fg_membersite.php<br />
+
+
+This file contains the main class that controls all the operations (validations, database updation, emailing etc) If you want to edit the email message or make changes to the logic, edit this file<br />
+
+
+includes/class.phpmailer.php<br />
+
+
+This script uses PHPMailer to send emails. See:http://sourceforge.net/projects/phpmailer/<br />
+
+
+includes/formvalidator.php<br />
+
+
+For form validations on the server side, the PHP form validator from HTML form guide is used See: PHP form validation<br />
+
+
+License<br />
+
+
+This program is free software published under the terms of the GNU Lesser General Public License. You can freely use it on commercial or non-commercial websites.<br />
+
+</body>
+</html>
